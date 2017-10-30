@@ -3,7 +3,9 @@ const path = require('path');
 
 console.log('Creating symlink to local modules');
 
-const localModulePaths = ["my_module"];
+const localModulePaths = [
+	"@my_module"
+];
 const base = "./";
 
 localModulePaths.forEach((modulePath) => {
@@ -19,7 +21,7 @@ localModulePaths.forEach((modulePath) => {
 			const linkPath = `node_modules/${modulePath}`;
 			// ensure, node_modules folder will exists, if no dependencies, node_modules will not be created
 			if (!fs.existsSync('node_modules')){
-    			fs.mkdirSync('node_modules');
+				fs.mkdirSync('node_modules');
 			}
 
 			fs.symlinkSync(source, linkPath, 'junction');
