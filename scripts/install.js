@@ -3,7 +3,7 @@ const path = require('path');
 
 console.log('Creating symlink to local modules');
 
-const localModulePaths = ["@my_module"];
+const localModulePaths = ["my_module"];
 const base = "./";
 
 localModulePaths.forEach((modulePath) => {
