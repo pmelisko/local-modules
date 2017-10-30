@@ -3,12 +3,12 @@ const path = require('path');
 
 console.log('Creating symlink to local modules');
 
-const localModulePaths = ["@local_module"];
+const localModulePaths = ["@my_module"];
 const base = "./";
 
 localModulePaths.forEach((modulePath) => {
 	// check if already installed (symlink already created)
-	if (fs.existsSync(`node_modules/@local_module`)) {
+	if (fs.existsSync(`node_modules/${modulePath}`)) {
 		console.log(`Module ${modulePath} already exists`)
 	} else {
 		let source = path.resolve(base, modulePath);
