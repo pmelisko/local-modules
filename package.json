@@ -1,0 +1,22 @@
+{
+  "name": "local-modules",
+  "version": "1.0.0",
+  "description": "Test project to handle local modules, which are part of application (@local_module)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "install": "node scripts/install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmelisko/local-modules.git"
+  },
+  "dependencies": {},
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmelisko/local-modules/issues"
+  },
+  "homepage": "https://github.com/pmelisko/local-modules#readme"
+}
